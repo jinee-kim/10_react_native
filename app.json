@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "workspace",
-    "slug": "workspace",
+    "slug": "myapp-4jns8devgwtmdpsjyxotq",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -17,7 +17,12 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA"
+      ],
+      "package": "com.jineekim.myapp4jns8devgwtmdpsjyxotq"
     },
     "web": {
       "output": "server",
@@ -33,11 +38,43 @@
           "imageWidth": 76
         }
       ],
-      "expo-secure-store"
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "프로필 사진과 게시물 등록을 위해 갤러리 접근 권한이 필요합니다.",
+          "cameraPermission": "직접 사진을 촬영하여 업로드하려면 카메라 접근 권환이 필요합니다."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "직접 사진을 촬영하여 업로드하려면 카메라 접근 권환이 필요합니다."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon02.png",
+          "color": "#ffffff",
+          "sounds": []
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5cbfd47e-e1e1-4ec9-8b02-40e0c65f71f4"
+      },
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      }
+    },
+    "owner": "jinee-kims-team"
   }
 }
