@@ -37,31 +37,31 @@ export default function index() {
             </View>
         )
     }
-
-    const postList=posts?.map((post)=>(
-        <Pressable
-            key={post.id}
-            className='
-                p-4 bg-gray-50
-                border border-gray-200
-                rounded-xl active:bg-gray-300
-            '
-            onPress={()=>{
-                router.push({
-                    pathname:`/stack/${post.id}`as any,
-                })
-        }}
-        >
-            <Text className='font-semibold text-gray-900' numberOfLines={1}>
-                {post.id}번, {post.title}
-            </Text>
-        </Pressable>
-    ))
-
-    return (
-        <ScrollView className='m-4 gap-4'>
-            <Text className='px-4 pt-2'>jsonplaceholder post 게시판</Text>
-            {postList}
-        </ScrollView>
-    )
 }
+//  const postList=posts?.map((post)=>(
+//        <Pressable
+//            key={post.id}
+//            className='
+//                p-4 bg-gray-50
+//                border border-gray-200
+//                rounded-xl active:bg-gray-300
+//            '
+//            onPress={()=>{
+//                router.push({
+//                    pathname:`/stack/${post.id}`as any,
+//                })
+//        }}
+//        >
+//            <Text className='font-semibold text-gray-900' numberOfLines={1}>
+//                {post.id}번, {post.title}
+//            </Text>
+//        </Pressable>
+//    ))
+//
+//    return (
+//        <ScrollView className='m-4 gap-4'>
+//            <Text className='px-4 pt-2'>jsonplaceholder post 게시판</Text>
+//            {postList}
+//        </ScrollView>
+//    )
+//}

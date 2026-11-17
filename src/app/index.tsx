@@ -7,7 +7,7 @@ export default function HomeScreen() {
     const buttonStyle="m-4 p-3 bg-blue-500 rounded-lg"
     const textStyle="flex justify-center text-white text-[20px] font-bold"
     const tags=[
-        "view","flatlist","stack"
+        "view","flatlist","stack","infinite"
     ]
     const tagList=tags.map((tag,i)=>(
         <Pressable
