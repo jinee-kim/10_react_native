@@ -8,7 +8,8 @@
     "scheme": "workspace",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.myapp.myapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -72,6 +73,29 @@
           "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone.",
           "enableBackgroundPlayback": true,
           "enableBackgroundRecording": false
+        }
+      ],
+      [
+        "expo-file-system",
+        {
+          "supportsOpeningDocumentsInPlace": true,
+          "enableFileSharing": true
+        }
+      ],
+      [
+        "expo-sharing",
+        {
+          "ios": {
+            "enabled": true,
+            "activationRule": {
+              "supportsImageWithMaxCount": 5
+            }
+          },
+          "android": {
+            "enabled": true,
+            "singleShareMimeTypes": ["image/*","text/plain"],
+            "multipleShareMimeTypes": ["image/*","text/plain"]
+          }
         }
       ]
     ],

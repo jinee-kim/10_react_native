@@ -7,7 +7,18 @@ export default function HomeScreen() {
     const buttonStyle="m-4 p-3 bg-blue-500 rounded-lg"
     const textStyle="flex justify-center text-white text-[20px] font-bold"
     const tags=[
-        "view","flatlist","stack","infinite","zustand","camera","notification01","notification02","location","audio"
+        "view",
+        "flatlist",
+        "stack",
+        "infinite",
+        "zustand",
+        "camera",
+        "notification01",
+        "notification02",
+        "location",
+        "audio",
+        "haptics",
+        "files"
     ]
     const tagList=tags.map((tag,i)=>(
         <Pressable
