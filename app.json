@@ -50,7 +50,9 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "직접 사진을 촬영하여 업로드하려면 카메라 접근 권환이 필요합니다."
+          "cameraPermission": "직접 사진을 촬영하여 업로드하려면 카메라 접근 권환이 필요합니다.",
+          "microphonePermission":"동영상 녹음을 위해 마이크 접근권한이 필요",
+          "recordAudioAndroid":true
         }
       ],
       [
@@ -93,11 +95,18 @@
           },
           "android": {
             "enabled": true,
-            "singleShareMimeTypes": ["image/*","text/plain"],
-            "multipleShareMimeTypes": ["image/*","text/plain"]
+            "singleShareMimeTypes": [
+              "image/*",
+              "text/plain"
+            ],
+            "multipleShareMimeTypes": [
+              "image/*",
+              "text/plain"
+            ]
           }
         }
-      ]
+      ],
+      "expo-video"
     ],
     "experiments": {
       "typedRoutes": true,

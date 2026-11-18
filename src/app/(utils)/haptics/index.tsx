@@ -32,8 +32,8 @@ export default function index() {
         },
         {
             content: "경고다",
-            enum: Haptics.NotificationFeedbackType.Warning
-        },
+                enum: Haptics.NotificationFeedbackType.Warning
+            },
         {
             content: "오류다",
             enum: Haptics.NotificationFeedbackType.Error

@@ -18,7 +18,8 @@ export default function HomeScreen() {
         "location",
         "audio",
         "haptics",
-        "files"
+        "files",
+        "video"
     ]
     const tagList=tags.map((tag,i)=>(
         <Pressable
